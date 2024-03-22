@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="nome"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true" />
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nome"
+        android:layout_alignStart="@+id/nome"
+        android:layout_below="@+id/nome"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="senha"
+        android:inputType="numberPassword" />
+    <EditText
+        android:id="@+id/e_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/senha"
+        android:layout_alignStart="@+id/senha"
+        android:layout_below="@+id/senha"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="e_mail"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/data_nascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/e_mail"
+        android:layout_alignStart="@+id/e_mail"
+        android:layout_below="@+id/e_mail"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="data_nascimento"
+        android:inputType="date" />
+    <EditText
+        android:id="@+id/telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/data_nascimento"
+        android:layout_alignStart="@+id/data_nascimento"
+        android:layout_below="@+id/data_nascimento"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="numero_telefone"
+        android:inputType="phone" />
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telefone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="enviar"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        />
+</RelativeLayout>
